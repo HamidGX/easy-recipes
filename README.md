@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# easy-recipes
 
-## Getting Started
+This web-based application helps users discover recipes. Developed with `Next.js, Zustand, and React Query`, the app offers a seamless and efficient way to search for and save your favorite recipes.
 
-First, run the development server:
+## Requirements
+
+1. Node: Version 20.10.0 was used in this case.
+2. Package Manager: You have the option to choose between NPM, Yarn, or other alternatives.
+
+## Installation
 
 ```bash
-npm run dev
-# or
+yarn install
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Dependencies
 
-## Learn More
+These are some of the dependencies used in the project, along with their respective versions:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+"@hookform/resolvers": "3.9.0",
+"@tanstack/react-query": "5.52.1",
+"@tanstack/react-query-devtools": "5.52.1",
+"lucide-react": "0.429.0",
+"next": "14.2.5",
+"next-themes": "0.3.0",
+"react": "18",
+"react-dom": "18",
+"react-hook-form": "7.53.0",
+"react-query": "3.39.3",
+"zod": "3.23.8",
+"zustand": "4.5.5"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## devDependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+These are some of the devDependencies used in the project, along with their respective versions:
 
-## Deploy on Vercel
+```bash
+"@types/node": "20",
+"@types/react": "18",
+"@types/react-dom": "18",
+"eslint": "8",
+"eslint-config-next": "14.2.5",
+"postcss": "8",
+"tailwindcss": "3.4.1",
+"typescript": "5"
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Obtain API Key
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To ensure the application functions properly, obtain your own API key by registering on the following website:
+
+1. [Edamam.com](https://www.edamam.com/): Food database and nutrition data provider to wellness and health applications.
+
+## Environment Variables
+
+To configure the necessary environment variables for the application to function, follow these steps:
+
+1. At the root of the project, create a file named .env.
+
+2. Open the .env file and then define the necessary environment variables following this format:
+
+```javascript
+//.env example
+NEXT_PUBLIC_EDAMAM_APP_ID = YOUR_APP_ID
+NEXT_PUBLIC_EDAMAN_APP_KEY = YOUR_APP_KEY
+```
+
+## Results
+
+![Imagen 1](https://i.imgur.com/zhajnlU.jpg)
+![Imagen 2](https://i.imgur.com/8fOiKSp.jpg)
+
+## Author
+
+Developed by [HamidGX](https://github.com/HamidGX)
